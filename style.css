@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300&display=swap');
+
+:root {
+    --bgColor: linear-gradient(120deg, #bba86c, #61d6c7);
+    --textColor: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: var(--bgColor);
+    color: var(--textColor);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+h2 {
+    color: #474347;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: .5rem;
+    font-size: 2rem;
+    border: none;
+    background: #fff;
+}
+
+form button {
+    color: #fda085;
+    background: #fff;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+form button:hover {
+    background: var(--bgColor);
+    color: var(--textColor);
+}
+
+.heading2 {
+    color: #474347;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo {
+    margin: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease-in;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.delete-button,
+.complete-button {
+    background-color: #ff6f47;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.complete-button {
+    background-color: rgb(73, 241, 73);
+}
+
+.todo-item {
+    padding: 0 6px;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #474347;
+    opacity: .6;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    padding: 1rem;
+  }
+  
+  /* Custom Select */
+ .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+  /* Arrow */
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  } 
+
+  /* mobile */
+
+  @media(max-width:500px) {
+      input {
+          width: 250px;
+      }
+
+      select {
+          width: 100px;
+      }
+  }
+
+  @media(max-width:280px) {
+      
+  }
